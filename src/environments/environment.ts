@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyAyENcMLv3UhaeMFczNDeyeMIh7bGTopQY",
+    authDomain: "sofka-blog.firebaseapp.com",
+    databaseURL: "https://sofka-blog.firebaseio.com",
+    projectId: "sofka-blog",
+    storageBucket: "sofka-blog.appspot.com",
+    messagingSenderId: "900470839982"
+  }
 };
 
 /*

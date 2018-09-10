@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Sofka blog</span>
+    <span class="example-spacer"></span>
+
+    <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
+      <span>Hello {{user.displayName}}</span>
+      <button (click)="auth.logout()" mat-button>Logout</button>
+    </div>
+    <ng-template #showLogin>
+      <button (click)="auth.login()" mat-button>Login with Google</button>
+    </ng-template>
+  </mat-toolbar-row>
+
+</mat-toolbar>
